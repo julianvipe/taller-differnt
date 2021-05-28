@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.imageB{
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/62/327/751/iceberg-ice-water-hd-wallpaper-preview.jpg');
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.imageB::before
+{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: blue;
+  opacity: 20%;
+
+}
+.content
+{   
+  padding:2%;
+  text-indent: 10px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+}
+.title
+{
+  margin-top: 100px;
+  font-size: 40px;
+  height: 100%;
+  min-height: 100px;
+  max-height: 500px;
+}
+.textB
+{
+  margin-top: 50px;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.card
+{
+  background-color:aliceblue;
+  padding: 20px;
+  border-radius: 25px 25px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0px;right: 0px;left: 0px;
+  height: 220px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backbutton
+{
+  color:aliceblue;
+  font-size: larger;
+}
+.imgA
+{
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    min-width: 30px;
+    border-radius: 55%;
+    box-shadow: 0 4px 8px 0 #e2fdff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.site-card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap:5%;
+  /* grid-template-columns:repeat(auto-fill,285px); */
+  width: 100%;
+  padding-top: 2%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn
+{
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  justify-content: center;
 }
